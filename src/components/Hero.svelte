@@ -19,7 +19,7 @@
 	</div>
 
 	<!-- Main Content Container -->
-	<div class="relative z-10 mx-auto w-full max-w-5xl px-8 lg:px-16">
+	<div class="relative z-10 mx-auto w-full max-w-[1600px] px-8 lg:px-16">
 		<!-- Swiss Grid Layout -->
 		<div class="grid grid-cols-12 gap-8 lg:gap-12">
 			<!-- Left Column: Typography -->

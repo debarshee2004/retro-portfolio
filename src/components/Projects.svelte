@@ -14,7 +14,7 @@
 		</div>
 	</div>
 
-	<div class="relative z-10 mx-auto w-full max-w-5xl px-8 lg:px-16">
+	<div class="relative z-10 mx-auto w-full max-w-[1600px] px-8 lg:px-16">
 		<div class="space-y-16">
 			<!-- Header -->
 			<div class="no-animation space-y-8">

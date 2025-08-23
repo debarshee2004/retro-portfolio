@@ -14,7 +14,7 @@
 		</div>
 	</div>
 
-	<div class="relative z-10 mx-auto w-full max-w-5xl px-8 lg:px-16">
+	<div class="relative z-10 mx-auto w-full max-w-[1600px] px-8 lg:px-16">
 		<div class="space-y-16">
 			<!-- Header -->
 			<div class="space-y-8">
@@ -65,7 +65,7 @@
 						</div>
 
 						<!-- Skills Grid -->
-						<div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+						<div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
 							{#each category.skills as skill}
 								<div
 									class="border-foreground group hover:border-retro-blue border-2 p-6 transition-all"
