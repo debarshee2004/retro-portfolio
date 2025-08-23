@@ -4,11 +4,11 @@
 		"japaneseCategory": "バックエンド開発",
 		"philosophy": "Shokunin craftsmanship",
 		"skills": [
-			{ "name": "Node.js • Express • Hono", "level": "職人級", "years": "3+" },
-			{ "name": "Python • Django • FastAPI", "level": "上級", "years": "2+" },
-			{ "name": "Java • Spring Boot • Kotlin", "level": "中級", "years": "2+" },
-			{ "name": "PostgreSQL • MongoDB • Redis", "level": "上級", "years": "3+" },
-			{ "name": "REST • GraphQL • WebSockets", "level": "職人級", "years": "3+" }
+			{ "name": "Node.js • Express • Hono", "level": "職人級" },
+			{ "name": "Python • Django • FastAPI", "level": "上級" },
+			{ "name": "Java • Spring Boot • Kotlin", "level": "中級" },
+			{ "name": "PostgreSQL • MongoDB • Redis", "level": "上級" },
+			{ "name": "REST • GraphQL • WebSockets", "level": "職人級" }
 		]
 	},
 	{
@@ -16,11 +16,11 @@
 		"japaneseCategory": "インフラ構築",
 		"philosophy": "Kaizen improvement",
 		"skills": [
-			{ "name": "Docker • Kubernetes • Helm", "level": "上級", "years": "2+" },
-			{ "name": "AWS • GCP • Azure Cloud", "level": "中級", "years": "2+" },
-			{ "name": "Terraform • Ansible • IaC", "level": "中級", "years": "1+" },
-			{ "name": "CI/CD • GitHub Actions", "level": "上級", "years": "3+" },
-			{ "name": "Nginx • Apache • Kafka", "level": "中級", "years": "2+" }
+			{ "name": "Docker • Kubernetes • Helm", "level": "上級" },
+			{ "name": "AWS • GCP • Azure Cloud", "level": "中級" },
+			{ "name": "Terraform • Ansible • IaC", "level": "中級" },
+			{ "name": "CI/CD • GitHub Actions", "level": "上級" },
+			{ "name": "Nginx • Apache • Kafka", "level": "中級" }
 		]
 	},
 	{
@@ -28,11 +28,11 @@
 		"japaneseCategory": "人工知能",
 		"philosophy": "Ikigai purpose",
 		"skills": [
-			{ "name": "PyTorch • TensorFlow • JAX", "level": "上級", "years": "2+" },
-			{ "name": "Transformers • HuggingFace", "level": "上級", "years": "2+" },
-			{ "name": "OpenCV • Computer Vision", "level": "中級", "years": "1+" },
-			{ "name": "NLP • NLTK • SpaCy", "level": "中級", "years": "1+" },
-			{ "name": "MLflow • Experiment Tracking", "level": "初級", "years": "1+" }
+			{ "name": "PyTorch • TensorFlow • JAX", "level": "上級" },
+			{ "name": "Transformers • HuggingFace", "level": "上級" },
+			{ "name": "OpenCV • Computer Vision", "level": "中級" },
+			{ "name": "NLP • NLTK • SpaCy", "level": "中級" },
+			{ "name": "MLflow • Experiment Tracking", "level": "初級" }
 		]
 	},
 	{
@@ -40,11 +40,11 @@
 		"japaneseCategory": "システム開発",
 		"philosophy": "Wabi-sabi simplicity",
 		"skills": [
-			{ "name": "Go • Rust • C++", "level": "中級", "years": "2+" },
-			{ "name": "Linux • System Calls", "level": "上級", "years": "3+" },
-			{ "name": "Networking • TCP/IP", "level": "上級", "years": "2+" },
-			{ "name": "Memory Management", "level": "中級", "years": "2+" },
-			{ "name": "Distributed Systems", "level": "中級", "years": "1+" }
+			{ "name": "Go • Rust • C++", "level": "中級" },
+			{ "name": "Linux • System Calls", "level": "上級" },
+			{ "name": "Networking • TCP/IP", "level": "上級" },
+			{ "name": "Memory Management", "level": "中級" },
+			{ "name": "Distributed Systems", "level": "中級" }
 		]
 	}
 ]
