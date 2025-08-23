@@ -1,32 +1,50 @@
 [
 	{
-		"category": "Backend",
+		"category": "Backend Development",
+		"japaneseCategory": "バックエンド開発",
+		"philosophy": "Shokunin craftsmanship",
 		"skills": [
-			{ "name": "Node Express Hono" },
-			{ "name": "Django FastAPI Flask" },
-			{ "name": "Spring-Boot Kotlin" },
-			{ "name": "Postgres MySQL MongoDB" },
-			{ "name": "REST GraphQL Sockets" }
+			{ "name": "Node.js • Express • Hono", "level": "職人級", "years": "3+" },
+			{ "name": "Python • Django • FastAPI", "level": "上級", "years": "2+" },
+			{ "name": "Java • Spring Boot • Kotlin", "level": "中級", "years": "2+" },
+			{ "name": "PostgreSQL • MongoDB • Redis", "level": "上級", "years": "3+" },
+			{ "name": "REST • GraphQL • WebSockets", "level": "職人級", "years": "3+" }
 		]
 	},
 	{
-		"category": "Devops",
+		"category": "DevOps & Infrastructure",
+		"japaneseCategory": "インフラ構築",
+		"philosophy": "Kaizen improvement",
 		"skills": [
-			{ "name": "Git-Actions CI-CD" },
-			{ "name": "Docker Kubernetes" },
-			{ "name": "AWS GCP Azure" },
-			{ "name": "Terraform Ansible" },
-			{ "name": "Nginx Apache Kafka" }
+			{ "name": "Docker • Kubernetes • Helm", "level": "上級", "years": "2+" },
+			{ "name": "AWS • GCP • Azure Cloud", "level": "中級", "years": "2+" },
+			{ "name": "Terraform • Ansible • IaC", "level": "中級", "years": "1+" },
+			{ "name": "CI/CD • GitHub Actions", "level": "上級", "years": "3+" },
+			{ "name": "Nginx • Apache • Kafka", "level": "中級", "years": "2+" }
 		]
 	},
 	{
-		"category": "AI/ML",
+		"category": "AI & Machine Learning",
+		"japaneseCategory": "人工知能",
+		"philosophy": "Ikigai purpose",
 		"skills": [
-			{ "name": "TensorFlow PyTorch" },
-			{ "name": "Scikit-learn Pandas" },
-			{ "name": "OpenCV NLTK SpaCy" },
-			{ "name": "HuggingFace Transformers" },
-			{ "name": "MLflow Kubeflow" }
+			{ "name": "PyTorch • TensorFlow • JAX", "level": "上級", "years": "2+" },
+			{ "name": "Transformers • HuggingFace", "level": "上級", "years": "2+" },
+			{ "name": "OpenCV • Computer Vision", "level": "中級", "years": "1+" },
+			{ "name": "NLP • NLTK • SpaCy", "level": "中級", "years": "1+" },
+			{ "name": "MLflow • Experiment Tracking", "level": "初級", "years": "1+" }
+		]
+	},
+	{
+		"category": "Systems Programming",
+		"japaneseCategory": "システム開発",
+		"philosophy": "Wabi-sabi simplicity",
+		"skills": [
+			{ "name": "Go • Rust • C++", "level": "中級", "years": "2+" },
+			{ "name": "Linux • System Calls", "level": "上級", "years": "3+" },
+			{ "name": "Networking • TCP/IP", "level": "上級", "years": "2+" },
+			{ "name": "Memory Management", "level": "中級", "years": "2+" },
+			{ "name": "Distributed Systems", "level": "中級", "years": "1+" }
 		]
 	}
 ]

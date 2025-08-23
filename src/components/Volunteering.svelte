@@ -5,88 +5,120 @@
 </script>
 
 <section id="volunteering" class="no-animation relative">
-	<!-- Section Number -->
-	<div class="mb-12 flex items-center space-x-6">
-		<div class="text-muted-foreground font-mono text-xs tracking-[0.3em] uppercase">005</div>
-		<div class="bg-retro-blue h-px flex-1"></div>
-		<div class="japanese-text">奉仕</div>
+	<!-- Simple Grid Overlay -->
+	<div class="pointer-events-none absolute inset-0 opacity-5">
+		<div class="grid h-full grid-cols-12 gap-8">
+			{#each Array(12) as _, i}
+				<div class="border-retro-blue border-r"></div>
+			{/each}
+		</div>
 	</div>
 
-	<div class="space-y-12">
-		<!-- Header -->
-		<div>
-			<h2 class="mb-8 text-5xl font-black tracking-[-0.02em] uppercase lg:text-6xl">
-				<span class="retro-blue">VOLUNTEER</span>
-			</h2>
-		</div>
+	<div class="relative z-10 mx-auto w-full max-w-5xl px-8 lg:px-16">
+		<div class="space-y-16">
+			<!-- Header -->
+			<div class="space-y-8">
+				<!-- Section Number -->
+				<div class="flex items-center space-x-6">
+					<div class="text-muted-foreground font-mono text-xs tracking-[0.3em] uppercase">006</div>
+					<div class="bg-retro-blue h-px flex-1"></div>
+				</div>
 
-		<!-- Volunteer Timeline -->
-		<div class="space-y-12">
-			{#each volunteer as vol}
-				<div class="grid grid-cols-12 gap-8">
-					<!-- Timeline Info -->
-					<div class="col-span-12 lg:col-span-3">
-						<div class="space-y-2">
-							<div class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
-								{vol.duration}
-							</div>
-							{#if vol.location}
-								<div class="text-muted-foreground text-sm">{vol.location}</div>
-							{/if}
-							{#if vol.status}
-								<div class="flex items-center space-x-2">
-									<div
-										class={`h-2 w-2 rounded-full ${vol.status === 'ongoing' ? 'bg-green-500' : 'bg-muted-foreground'}`}
-									></div>
-									<span class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
-										{vol.status}
-									</span>
-								</div>
-							{/if}
-						</div>
-					</div>
-
-					<!-- Content -->
-					<div class="col-span-12 lg:col-span-9">
-						<div class="border-retro-blue space-y-4 border-l-2 pl-6">
-							<div class="space-y-2">
-								<h3 class="text-xl font-semibold">{vol.organization}</h3>
-								<h4 class="retro-blue font-medium">{vol.title}</h4>
-							</div>
-
-							{#if vol.description}
-								<p class="text-muted-foreground leading-relaxed">{vol.description}</p>
-							{/if}
-
-							{#if vol.impact}
-								<div class="space-y-2">
-									<div class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
-										Impact
-									</div>
-									<p class="text-muted-foreground text-sm leading-relaxed">
-										{vol.impact}
-									</p>
-								</div>
-							{/if}
-
-							{#if vol.skills && vol.skills.length > 0}
-								<div class="space-y-2">
-									<div class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
-										Skills Used
-									</div>
-									<div class="flex flex-wrap gap-2">
-										{#each vol.skills as skill}
-											<span class="border-foreground border px-2 py-1 font-mono text-xs uppercase">
-												{skill}
-											</span>
-										{/each}
-									</div>
-								</div>
-							{/if}
-						</div>
+				<!-- Title with Japanese -->
+				<div class="space-y-4">
+					<h2 class="text-6xl font-black tracking-[-0.02em] uppercase md:text-7xl">
+						<span class="japanese-text">奉仕</span><br />
+						VOLUNTEER
+					</h2>
+					<div class="brutalist-box inline-block">
+						<span class="japanese-text">コミュニティ</span> COMMUNITY SERVICE
 					</div>
 				</div>
-			{/each}
+			</div>
+
+			<!-- Volunteer Timeline -->
+			<div class="space-y-16">
+				{#each volunteer as vol, id}
+					<div class="grid grid-cols-12 gap-8 lg:gap-16">
+						<!-- Timeline & Meta -->
+						<div class="col-span-12 lg:col-span-4">
+							<div class="space-y-6">
+								<!-- Volunteer Number -->
+								<div class="flex items-center space-x-4">
+									<div class="text-retro-red text-4xl font-black">
+										{String(id + 1).padStart(2, '0')}
+									</div>
+									<div class="bg-retro-red h-px flex-1"></div>
+								</div>
+
+								<!-- Meta Information -->
+								<div class="space-y-3">
+									<div class="border-retro-green border-l-2 pl-4">
+										<div class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
+											{vol.duration}
+										</div>
+										{#if vol.type}
+											<div class="text-retro-green font-mono text-xs tracking-wide uppercase">
+												{vol.type}
+											</div>
+										{/if}
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Content -->
+						<div class="col-span-12 lg:col-span-8">
+							<div class="space-y-6">
+								<!-- Title & Organization -->
+								<div class="space-y-3">
+									<h3 class="text-2xl font-bold tracking-wide uppercase">{vol.organization}</h3>
+									<h4 class="japanese-text text-lg font-medium">{vol.title}</h4>
+									{#if vol.japaneseTitle}
+										<div class="text-muted-foreground font-light">
+											{vol.japaneseTitle}
+										</div>
+									{/if}
+								</div>
+
+								<!-- Description -->
+								{#if vol.description}
+									<div class="border-retro-yellow border-l-2 pl-4">
+										<p class="text-muted-foreground leading-relaxed font-light">
+											{vol.description}
+										</p>
+									</div>
+								{/if}
+
+								<!-- Impact & Philosophy -->
+								<div class="grid grid-cols-1 gap-6 lg:grid-cols-2">
+									{#if vol.impact}
+										<div class="space-y-2">
+											<h5 class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
+												<span class="japanese-text">影響</span> IMPACT
+											</h5>
+											<div class="border-retro-blue border-l-2 pl-4">
+												<span class="text-sm font-medium">{vol.impact}</span>
+											</div>
+										</div>
+									{/if}
+
+									{#if vol.philosophy}
+										<div class="space-y-2">
+											<h5 class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
+												<span class="japanese-text">哲学</span> PHILOSOPHY
+											</h5>
+											<div class="border-retro-red border-l-2 pl-4">
+												<span class="text-sm font-light italic">{vol.philosophy}</span>
+											</div>
+										</div>
+									{/if}
+								</div>
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
 		</div>
 	</div>
 </section>

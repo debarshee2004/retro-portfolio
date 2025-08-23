@@ -63,19 +63,44 @@
 
 								<!-- Project Meta -->
 								<div class="space-y-4">
-									<div>
-										<h3 class="mb-3 text-2xl font-bold tracking-wide uppercase">{project.title}</h3>
-										{#if project.featured}
-											<div class="brutalist-box inline-block">
-												<span class="japanese-text">特集</span> FEATURED
-											</div>
-										{:else}
-											<div
-												class="border-retro-red bg-background border px-3 py-1 font-mono text-xs tracking-wider uppercase"
-											>
-												<span class="japanese-text">作品</span> PROJECT
+									<div class="space-y-3">
+										<h3 class="mb-2 text-2xl font-bold tracking-wide uppercase">{project.title}</h3>
+										{#if project.japaneseTitle}
+											<div class="japanese-text text-lg font-medium">
+												{project.japaneseTitle}
 											</div>
 										{/if}
+
+										<div class="flex flex-wrap gap-2">
+											{#if project.status === 'featured'}
+												<div class="brutalist-box inline-block">
+													<span class="japanese-text">特集</span> FEATURED
+												</div>
+											{:else}
+												<div
+													class="border-retro-red bg-background border px-3 py-1 font-mono text-xs tracking-wider uppercase"
+												>
+													<span class="japanese-text">作品</span>
+													{project.status?.toUpperCase() || 'PROJECT'}
+												</div>
+											{/if}
+
+											{#if project.category}
+												<div
+													class="border-retro-blue bg-background border px-3 py-1 font-mono text-xs tracking-wider uppercase"
+												>
+													{project.category}
+												</div>
+											{/if}
+
+											{#if project.year}
+												<div
+													class="border-retro-yellow bg-background border px-3 py-1 font-mono text-xs tracking-wider uppercase"
+												>
+													{project.year}
+												</div>
+											{/if}
+										</div>
 									</div>
 
 									<div class="border-retro-yellow border-l-2 pl-4">

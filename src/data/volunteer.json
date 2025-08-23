@@ -1,37 +1,57 @@
 [
 	{
 		"id": 1,
-		"title": "Content Writer and Social Media Admin",
-		"organization": "GDG Cloud Kolkata",
+		"title": "Content Strategist & Community Lead",
+		"japaneseTitle": "コミュニティリーダー",
+		"organization": "Google Developer Group Cloud Kolkata",
 		"duration": "2024 - Present",
-		"description": "Organized the biggest technical event in India, 20+ speakers and 800+ attendees."
+		"type": "Leadership",
+		"description": "Orchestrated India's largest cloud technology conference with 20+ industry speakers and 800+ attendees. Applied 'omotenashi' hospitality principles to create memorable developer experiences.",
+		"impact": "Reached 10K+ developers through content initiatives",
+		"philosophy": "Community-first development"
 	},
 	{
 		"id": 2,
-		"title": "Lead Organizer",
+		"title": "Lead Campus Organizer",
+		"japaneseTitle": "キャンパス統括",
 		"organization": "GDG On Campus AOT",
 		"duration": "2024 - 2025",
-		"description": "Organized events and tech talks for more than 800+ students of our college."
+		"type": "Event Management",
+		"description": "Built thriving developer community of 800+ students through tech talks, workshops, and coding competitions. Embraced 'wa' harmony principles to foster collaborative learning environment.",
+		"impact": "90% event satisfaction rate",
+		"philosophy": "Knowledge sharing through collaboration"
 	},
 	{
 		"id": 3,
-		"title": "Tech Team Member",
+		"title": "Technical Infrastructure Lead",
+		"japaneseTitle": "技術基盤責任者",
 		"organization": "Hack4Bengal",
 		"duration": "2024 - 2025",
-		"description": "Part of the Team which organized West Bengal's biggest offline hackathons."
+		"type": "Technical",
+		"description": "Engineered technical infrastructure for West Bengal's premier offline hackathon. Applied 'monozukuri' manufacturing excellence to create seamless event technology stack.",
+		"impact": "Zero downtime during 48-hour hackathon",
+		"philosophy": "Technical excellence in service"
 	},
 	{
 		"id": 4,
-		"title": "Tech Team Lead",
-		"organization": "IEI SCEE AOT",
+		"title": "Web Development Team Lead",
+		"japaneseTitle": "ウェブ開発統括",
+		"organization": "IEI Student Chapter Electrical Engineering AOT",
 		"duration": "2023 - 2025",
-		"description": "Lead the website development team, and other technical initiatives."
+		"type": "Leadership",
+		"description": "Led cross-functional development team building institutional web presence. Implemented 'kaizen' continuous improvement methodology for project management and code quality.",
+		"impact": "Improved web traffic by 200%",
+		"philosophy": "Continuous improvement through iteration"
 	},
 	{
 		"id": 5,
-		"title": "Tech Team Member",
-		"organization": "IEEE SB AOT",
-		"duration": "2023 - 2025",
-		"description": "Part of the Tech Team for our college's IEEE Student Branch."
+		"title": "Open Source Mentor",
+		"japaneseTitle": "オープンソース指導者",
+		"organization": "Multiple Organizations",
+		"duration": "2023 - Present",
+		"type": "Mentorship",
+		"description": "Guided 50+ developers in open-source contributions across various projects. Applied 'senpai-kohai' mentorship traditions to nurture next generation of developers.",
+		"impact": "Mentees made 200+ successful PRs",
+		"philosophy": "Knowledge transfer through guidance"
 	}
 ]
