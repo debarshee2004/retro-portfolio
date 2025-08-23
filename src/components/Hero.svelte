@@ -13,7 +13,7 @@
 	<div class="pointer-events-none absolute inset-0 opacity-5">
 		<div class="grid h-full grid-cols-12 gap-8">
 			{#each Array(12) as _, i}
-				<div class="border-retro-blue border-r"></div>
+				<div class="border-japanese-blue border-r"></div>
 			{/each}
 		</div>
 	</div>
@@ -35,7 +35,7 @@
 					<h1 class="brutal-title">
 						<span class="japanese-kanji">建築家</span><br />
 						DINO<br />
-						<span class="japanese-red">CODES</span>
+						<span class="japanese-blue">CODES</span>
 					</h1>
 
 					<div class="brutalist-box japanese-float">
@@ -101,8 +101,8 @@
 					</div>
 					<div class="brutal-grid grid-cols-2 gap-2">
 						<div class="brutalist-button text-center text-xs">Python</div>
-						<div class="brutalist-button text-center text-xs">Java</div>
-						<div class="brutalist-button text-center text-xs">Go</div>
+						<div class="brutalist-button japanese-gold-bg text-center text-xs text-black">Java</div>
+						<div class="brutalist-button japanese-red-bg text-center text-xs">Go</div>
 						<div class="brutalist-button text-center text-xs">TypeScript</div>
 					</div>
 				</div>
@@ -121,7 +121,7 @@
 					<a href="#contact" class="brutalist-button">
 						<span class="japanese-kanji">連絡</span> CONTACT
 					</a>
-					<a href="#experience" class="brutalist-button japanese-gold-bg text-black"> View Work </a>
+					<a href="#experience" class="brutalist-button japanese-blue-bg text-white"> View Work </a>
 				</div>
 			</div>
 		</div>

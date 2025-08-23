@@ -30,21 +30,5 @@
 			"Contributed to critical production infrastructure"
 		],
 		"technologies": ["Java", "Go", "Apache Iceberg", "MongoDB", "AWS S3", "Shell Scripting"]
-	},
-	{
-		"id": 3,
-		"title": "Full-Stack Developer",
-		"japaneseTitle": "フルスタック開発者",
-		"company": "Freelance Projects",
-		"location": "Remote",
-		"duration": "2021 - 2022",
-		"type": "Freelance",
-		"description": "Built multiple web applications with modern stack. Embraced 'wabi-sabi' design philosophy - finding beauty in imperfection through clean, minimal interfaces that prioritize user experience over complex features.",
-		"achievements": [
-			"Delivered 8+ projects with 100% client satisfaction",
-			"Specialized in React and Node.js ecosystems",
-			"Maintained long-term client relationships"
-		],
-		"technologies": ["React", "Node.js", "MongoDB", "Express", "TailwindCSS"]
 	}
 ]

@@ -33,46 +33,5 @@
 		"status": "experimental",
 		"year": "2024",
 		"github": "https://github.com/debarshee2004/goredis"
-	},
-	{
-		"id": 4,
-		"title": "Container Runtime Engine",
-		"japaneseTitle": "コンテナ職人",
-		"description": "Container virtualization from first principles. Implementing 'wabi-sabi' philosophy - finding beauty in imperfection through minimal, elegant system design.",
-		"technologies": ["Go", "Linux", "Cgroups", "Namespaces", "Syscalls"],
-		"category": "Systems",
-		"status": "development",
-		"year": "2024",
-		"github": "https://github.com/debarshee2004/containers-from-scratch"
-	},
-	{
-		"id": 5,
-		"title": "Transformer Architecture",
-		"japaneseTitle": "注意機構",
-		"description": "Deep learning transformer implementation following Vaswani et al. 2017. Built with 'ikigai' - purpose-driven development to understand the intersection of AI and human communication.",
-		"technologies": ["Python", "PyTorch", "HuggingFace", "Transformers", "CUDA"],
-		"category": "AI/ML",
-		"status": "research",
-		"year": "2023",
-		"github": "https://github.com/debarshee2004/attention-is-all-you-need"
-	},
-	{
-		"id": 6,
-		"title": "Microservices E-Commerce",
-		"japaneseTitle": "電子商取引",
-		"description": "Distributed commerce platform with Spring ecosystem. Designed with 'kanso' simplicity principles - eliminating unnecessary complexity while maintaining enterprise scalability.",
-		"technologies": [
-			"Java",
-			"Spring Boot",
-			"GraphQL",
-			"PostgreSQL",
-			"MongoDB",
-			"Docker",
-			"Kubernetes"
-		],
-		"category": "Backend",
-		"status": "production",
-		"year": "2023",
-		"github": "https://github.com/debarshee2004/spring-microservice"
 	}
 ]

@@ -1,11 +1,11 @@
 [
 	{
 		"id": 1,
-		"title": "Content Strategist & Community Lead",
-		"japaneseTitle": "コミュニティリーダー",
+		"title": "Content Strategist",
+		"japaneseTitle": "コンテンツストラテジスト",
 		"organization": "Google Developer Group Cloud Kolkata",
 		"duration": "2024 - Present",
-		"type": "Leadership",
+		"type": "Event Management",
 		"description": "Orchestrated India's largest cloud technology conference with 20+ industry speakers and 800+ attendees. Applied 'omotenashi' hospitality principles to create memorable developer experiences.",
 		"impact": "Reached 10K+ developers through content initiatives",
 		"philosophy": "Community-first development"
@@ -16,14 +16,14 @@
 		"japaneseTitle": "キャンパス統括",
 		"organization": "GDG On Campus AOT",
 		"duration": "2024 - 2025",
-		"type": "Event Management",
+		"type": "Leadership",
 		"description": "Built thriving developer community of 800+ students through tech talks, workshops, and coding competitions. Embraced 'wa' harmony principles to foster collaborative learning environment.",
 		"impact": "90% event satisfaction rate",
 		"philosophy": "Knowledge sharing through collaboration"
 	},
 	{
 		"id": 3,
-		"title": "Technical Infrastructure Lead",
+		"title": "Technical Member",
 		"japaneseTitle": "技術基盤責任者",
 		"organization": "Hack4Bengal",
 		"duration": "2024 - 2025",
@@ -42,16 +42,5 @@
 		"description": "Led cross-functional development team building institutional web presence. Implemented 'kaizen' continuous improvement methodology for project management and code quality.",
 		"impact": "Improved web traffic by 200%",
 		"philosophy": "Continuous improvement through iteration"
-	},
-	{
-		"id": 5,
-		"title": "Open Source Mentor",
-		"japaneseTitle": "オープンソース指導者",
-		"organization": "Multiple Organizations",
-		"duration": "2023 - Present",
-		"type": "Mentorship",
-		"description": "Guided 50+ developers in open-source contributions across various projects. Applied 'senpai-kohai' mentorship traditions to nurture next generation of developers.",
-		"impact": "Mentees made 200+ successful PRs",
-		"philosophy": "Knowledge transfer through guidance"
 	}
 ]

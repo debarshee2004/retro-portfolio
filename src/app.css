@@ -41,6 +41,7 @@
 	--japanese-grey: 0 0% 25%;
 	--japanese-orange: 15 90% 55%;
 	--japanese-green: 130 50% 35%;
+	--japanese-blue: 213 100% 46%; /* #0075eb */
 	
 	/* Brutalist Shadows and Effects */
 	--brutal-shadow: 8px 8px 0px hsl(var(--japanese-black));
@@ -349,7 +350,7 @@ a:focus {
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	border: 4px solid hsl(var(--japanese-black));
+	border: 4px solid hsl(var(--japanese-blue));
 	box-shadow: var(--brutal-shadow);
 	transform: rotate(-1deg);
 	transition: all 0.1s ease;
@@ -363,7 +364,7 @@ a:focus {
 
 .brutalist-card {
 	background: hsl(var(--card));
-	border: 3px solid hsl(var(--japanese-black));
+	border: 3px solid hsl(var(--japanese-blue));
 	box-shadow: var(--brutal-shadow);
 	padding: 2rem;
 	transform: rotate(0.5deg);
@@ -376,7 +377,7 @@ a:focus {
 }
 
 .brutalist-button {
-	background: hsl(var(--japanese-red));
+	background: hsl(var(--japanese-blue));
 	color: hsl(var(--japanese-white));
 	border: 3px solid hsl(var(--japanese-black));
 	padding: 1rem 2rem;
@@ -404,11 +405,11 @@ a:focus {
 
 /* Japanese Decorative Elements */
 .japanese-border {
-	border: 3px solid hsl(var(--japanese-red));
+	border: 3px solid hsl(var(--japanese-blue));
 	border-image: repeating-linear-gradient(
 		45deg,
-		hsl(var(--japanese-red)),
-		hsl(var(--japanese-red)) 10px,
+		hsl(var(--japanese-blue)),
+		hsl(var(--japanese-blue)) 10px,
 		hsl(var(--japanese-gold)) 10px,
 		hsl(var(--japanese-gold)) 20px
 	) 3;
@@ -419,9 +420,9 @@ a:focus {
 	height: 6px;
 	background: linear-gradient(
 		90deg,
-		hsl(var(--japanese-red)) 0%,
+		hsl(var(--japanese-blue)) 0%,
 		hsl(var(--japanese-gold)) 50%,
-		hsl(var(--japanese-red)) 100%
+		hsl(var(--japanese-blue)) 100%
 	);
 	box-shadow: 0 3px 0px hsl(var(--japanese-black));
 }
@@ -476,7 +477,7 @@ a:focus {
 	letter-spacing: -0.02em;
 	line-height: 0.9;
 	text-shadow: 4px 4px 0px hsl(var(--japanese-black));
-	color: hsl(var(--japanese-red));
+	color: hsl(var(--japanese-blue));
 }
 
 .brutal-subtitle {
@@ -498,8 +499,35 @@ a:focus {
 .japanese-navy { color: hsl(var(--japanese-navy)); }
 .japanese-orange { color: hsl(var(--japanese-orange)); }
 .japanese-green { color: hsl(var(--japanese-green)); }
+.japanese-blue { color: hsl(var(--japanese-blue)); }
 
 .japanese-red-bg { background-color: hsl(var(--japanese-red)); }
 .japanese-gold-bg { background-color: hsl(var(--japanese-gold)); }
 .japanese-white-bg { background-color: hsl(var(--japanese-white)); }
 .japanese-black-bg { background-color: hsl(var(--japanese-black)); }
+.japanese-blue-bg { background-color: hsl(var(--japanese-blue)); }
+
+/* Blue-themed brutalist variants */
+.brutalist-box-blue {
+	background: hsl(var(--japanese-blue));
+	color: hsl(var(--japanese-white));
+	padding: 1rem 2rem;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	border: 4px solid hsl(var(--japanese-black));
+	box-shadow: var(--brutal-shadow);
+	transform: rotate(-1deg);
+	transition: all 0.1s ease;
+	display: inline-block;
+}
+
+.brutalist-card-blue {
+	background: hsl(var(--japanese-blue));
+	color: hsl(var(--japanese-white));
+	border: 3px solid hsl(var(--japanese-black));
+	box-shadow: var(--brutal-shadow);
+	padding: 2rem;
+	transform: rotate(0.5deg);
+	transition: all 0.2s ease;
+}

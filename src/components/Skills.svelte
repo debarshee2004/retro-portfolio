@@ -9,7 +9,7 @@
 	<div class="pointer-events-none absolute inset-0 opacity-5">
 		<div class="grid h-full grid-cols-12 gap-8">
 			{#each Array(12) as _, i}
-				<div class="border-retro-blue border-r"></div>
+				<div class="border-japanese-blue border-r"></div>
 			{/each}
 		</div>
 	</div>
@@ -21,7 +21,7 @@
 				<!-- Section Number -->
 				<div class="flex items-center space-x-6">
 					<div class="text-muted-foreground font-mono text-xs tracking-[0.3em] uppercase">004</div>
-					<div class="bg-retro-blue h-px flex-1"></div>
+					<div class="bg-japanese-blue h-px flex-1"></div>
 				</div>
 
 				<!-- Title with Japanese -->
