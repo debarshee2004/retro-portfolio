@@ -26,12 +26,12 @@
 
 				<!-- Title with Japanese -->
 				<div class="space-y-4">
-					<h2 class="text-6xl font-black tracking-[-0.02em] uppercase md:text-7xl">
-						<span class="japanese-text">技術</span><br />
+					<h2 class="brutal-title">
+						<span class="japanese-kanji">技術力</span><br />
 						SKILLS
 					</h2>
-					<div class="brutalist-box inline-block">
-						<span class="japanese-text">職人</span> CRAFTSMANSHIP
+					<div class="brutalist-box japanese-float">
+						<span class="japanese-kanji">職人技</span> CRAFTSMANSHIP
 					</div>
 				</div>
 			</div>
@@ -41,53 +41,44 @@
 				{#each skills as category}
 					<div class="space-y-8">
 						<!-- Category Header -->
-						<div class="space-y-4">
-							<div class="flex items-center space-x-4">
-								<h3 class="text-2xl font-bold tracking-wide uppercase">
+						<div class="brutal-section">
+							<div class="mb-4 flex items-center space-x-4">
+								<h3 class="brutal-subtitle">
 									{category.category}
 								</h3>
-								<div class="bg-retro-blue h-px flex-1"></div>
+								<div class="japanese-accent-line flex-1"></div>
 							</div>
 
 							{#if category.japaneseCategory}
-								<div class="japanese-text text-lg font-medium">
+								<div class="japanese-kanji mb-3 text-lg font-bold">
 									{category.japaneseCategory}
 								</div>
 							{/if}
 
 							{#if category.philosophy}
-								<div class="border-retro-yellow border-l-2 pl-4">
-									<p class="text-muted-foreground text-sm font-light italic">
-										Philosophy: <span class="japanese-text">{category.philosophy}</span>
+								<div class="brutalist-card japanese-gold-bg text-black">
+									<p class="text-sm font-bold">
+										Philosophy: <span class="japanese-kanji">{category.philosophy}</span>
 									</p>
 								</div>
 							{/if}
 						</div>
 
 						<!-- Skills Grid -->
-						<div class="grid grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3">
+						<div class="brutal-grid">
 							{#each category.skills as skill}
-								<div
-									class="border-foreground group hover:border-retro-blue border-2 p-6 transition-all"
-								>
+								<div class="brutalist-card">
 									<div class="space-y-3">
 										<div class="flex items-start justify-between">
-											<div class="text-sm leading-relaxed font-medium">{skill.name}</div>
-											{#if skill.years}
-												<div class="text-retro-blue font-mono text-xs tracking-wider uppercase">
-													{skill.years}
-												</div>
-											{/if}
+											<div class="text-sm leading-relaxed font-bold">{skill.name}</div>
 										</div>
 
 										{#if skill.level}
 											<div class="flex items-center space-x-3">
-												<div class="japanese-text text-xs font-medium">
+												<div class="japanese-kanji text-xs font-bold">
 													{skill.level}
 												</div>
-												<div
-													class="bg-retro-blue h-px flex-1 opacity-30 transition-opacity group-hover:opacity-100"
-												></div>
+												<div class="japanese-accent-line flex-1"></div>
 											</div>
 										{/if}
 									</div>

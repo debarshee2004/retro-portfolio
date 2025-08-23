@@ -26,20 +26,20 @@
 
 				<!-- Title with Japanese -->
 				<div class="space-y-4">
-					<h2 class="text-6xl font-black tracking-[-0.02em] uppercase md:text-7xl">
-						<span class="japanese-text">作品</span><br />
+					<h2 class="brutal-title">
+						<span class="japanese-kanji">作品集</span><br />
 						PROJECTS
 					</h2>
-					<div class="brutalist-box inline-block">
-						<span class="japanese-text">創造</span> CREATIVE WORK
+					<div class="brutalist-box japanese-float">
+						<span class="japanese-kanji">創造物</span> CREATIVE WORK
 					</div>
 				</div>
 
 				<!-- Description -->
 				<div class="max-w-2xl">
-					<div class="border-retro-blue border-l-2 pl-6">
-						<p class="text-muted-foreground leading-relaxed font-light">
-							Selected work showcasing expertise in <span class="japanese-text">機械学習</span> (machine
+					<div class="brutalist-card">
+						<p class="leading-relaxed font-medium">
+							Selected work showcasing expertise in <span class="japanese-kanji">機械学習</span> (machine
 							learning), full-stack development, and innovative solutions across various domains.
 						</p>
 					</div>
