@@ -1,0 +1,32 @@
+[
+	{
+		"category": "Backend",
+		"skills": [
+			{ "name": "Node Express Hono" },
+			{ "name": "Django FastAPI Flask" },
+			{ "name": "Spring-Boot Kotlin" },
+			{ "name": "Postgres MySQL MongoDB" },
+			{ "name": "REST GraphQL Sockets" }
+		]
+	},
+	{
+		"category": "Devops",
+		"skills": [
+			{ "name": "Git-Actions CI-CD" },
+			{ "name": "Docker Kubernetes" },
+			{ "name": "AWS GCP Azure" },
+			{ "name": "Terraform Ansible" },
+			{ "name": "Nginx Apache Kafka" }
+		]
+	},
+	{
+		"category": "AI/ML",
+		"skills": [
+			{ "name": "TensorFlow PyTorch" },
+			{ "name": "Scikit-learn Pandas" },
+			{ "name": "OpenCV NLTK SpaCy" },
+			{ "name": "HuggingFace Transformers" },
+			{ "name": "MLflow Kubeflow" }
+		]
+	}
+]
