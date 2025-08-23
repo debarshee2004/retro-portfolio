@@ -17,7 +17,7 @@
 	/>
 </svelte:head>
 
-<main class="space-y-32 lg:space-y-48">
+<main class="space-y-24">
 	<Hero />
 	<About />
 	<Experience />
