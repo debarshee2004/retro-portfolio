@@ -1,151 +1,194 @@
 <script lang="ts">
 	import projectsData from '../data/projects.json';
-	import { onMount } from 'svelte';
 
 	let projects: any[] = projectsData;
-	let mounted = false;
-
-	onMount(() => {
-		mounted = true;
-	});
 </script>
 
 <section id="projects" class="relative">
-	<!-- Section Number -->
-	<div
-		class={`absolute -top-2.5 -left-34 ${mounted ? 'opacity-100' : 'opacity-0'}`}
-		style="animation-delay: 1.0s;"
-	>
-		<div class="text-muted-foreground/20 text-8xl font-black select-none">05</div>
-	</div>
-
-	<div class="space-y-16">
-		<!-- Header -->
-		<div class={`${mounted ? 'opacity-100' : 'opacity-0'}`} style="animation-delay: 1.1s;">
-			<div class="mb-12 flex items-center space-x-8">
-				<h2 class="text-4xl font-black tracking-wider uppercase">Projects</h2>
-				<div class="bg-foreground h-px flex-1"></div>
-			</div>
-			<p class="text-muted-foreground max-w-2xl text-xl leading-relaxed font-light">
-				Selected work showcasing expertise in machine learning, full-stack development, and
-				innovative solutions across various domains.
-			</p>
-		</div>
-
-		<!-- Projects Grid -->
-		<div class="space-y-20">
-			{#each projects as project, id}
-				<div
-					class={`grid grid-cols-12 gap-8 lg:gap-16 ${mounted ? 'opacity-100' : 'opacity-0'}`}
-					style="animation-delay: {1.2 + id * 0.1}s;"
-				>
-					<!-- Project Number & Info -->
-					<div class="col-span-12 lg:col-span-4">
-						<div class="space-y-6">
-							<!-- Project Number -->
-							<div class="text-muted-foreground/30 text-6xl font-black">
-								{String(id + 1).padStart(2, '0')}
-							</div>
-
-							<!-- Project Meta -->
-							<div class="space-y-4">
-								<div>
-									<h3 class="mb-2 text-2xl font-bold">{project.title}</h3>
-									{#if project.featured}
-										<div
-											class="bg-foreground text-background inline-block px-3 py-1 text-xs font-medium tracking-wider uppercase"
-										>
-											Featured
-										</div>
-									{/if}
-								</div>
-
-								<p class="text-muted-foreground leading-relaxed font-light">
-									{project.description}
-								</p>
-							</div>
-						</div>
-					</div>
-
-					<!-- Project Details -->
-					<div class="col-span-12 lg:col-span-8">
-						<div class="space-y-8">
-							<!-- Project Visual -->
-							<div
-								class="bg-muted border-foreground relative aspect-video overflow-hidden border-2"
-							>
-								<div
-									class="from-muted-foreground/10 to-muted-foreground/30 absolute inset-0 bg-gradient-to-br"
-								></div>
-								<div class="absolute inset-0 flex items-center justify-center">
-									<div class="text-muted-foreground/50 text-4xl font-black">
-										{project.title.charAt(0)}
-									</div>
-								</div>
-							</div>
-
-							<!-- Technologies & Links -->
-							<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
-								<!-- Technologies -->
-								<div class="space-y-4">
-									<h4 class="text-muted-foreground text-xs font-medium tracking-wider uppercase">
-										Technologies
-									</h4>
-									<div class="space-y-2">
-										{#each project.technologies as tech}
-											<div class="border-foreground border-l-2 pl-4 text-sm font-medium">
-												{tech}
-											</div>
-										{/each}
-									</div>
-								</div>
-
-								<!-- Links -->
-								<div class="space-y-4">
-									<h4 class="text-muted-foreground text-xs font-medium tracking-wider uppercase">
-										Links
-									</h4>
-									<div class="space-y-3">
-										{#if project.github}
-											<a
-												href={project.github}
-												target="_blank"
-												rel="noopener noreferrer"
-												class="hover:text-muted-foreground group flex items-center text-sm font-medium transition-colors"
-											>
-												<div class="h-px transition-all group-hover:w-2"></div>
-												<span>View on GitHub</span>
-											</a>
-										{/if}
-										{#if project.live}
-											<a
-												href={project.live}
-												target="_blank"
-												rel="noopener noreferrer"
-												class="hover:text-muted-foreground group flex items-center text-sm font-medium transition-colors"
-											>
-												<div class="h-px transition-all group-hover:w-2"></div>
-												<span>Live Demo</span>
-											</a>
-										{/if}
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
+	<!-- Simple Grid Overlay -->
+	<div class="pointer-events-none absolute inset-0 opacity-5">
+		<div class="grid h-full grid-cols-12 gap-8">
+			{#each Array(12) as _, i}
+				<div class="border-retro-blue border-r"></div>
 			{/each}
 		</div>
+	</div>
 
-		<!-- Checkout my Projects Button -->
-		<div class="mt-12">
-			<a
-				target="_blank"
-				href="https://github.com/debarshee2004"
-				class="border-foreground bg-background hover:bg-foreground hover:text-background inline-block border-2 px-8 py-4 font-mono text-sm tracking-[0.1em] uppercase transition-all duration-200"
-			>
-				Checkout more Projects
-			</a>
+	<div class="relative z-10 mx-auto w-full max-w-5xl px-8 lg:px-16">
+		<div class="space-y-16">
+			<!-- Header -->
+			<div class="no-animation space-y-8">
+				<!-- Section Number -->
+				<div class="flex items-center space-x-6">
+					<div class="text-muted-foreground font-mono text-xs tracking-[0.3em] uppercase">005</div>
+					<div class="bg-retro-blue h-px flex-1"></div>
+				</div>
+
+				<!-- Title with Japanese -->
+				<div class="space-y-4">
+					<h2 class="text-6xl font-black tracking-[-0.02em] uppercase md:text-7xl">
+						<span class="japanese-text">作品</span><br />
+						PROJECTS
+					</h2>
+					<div class="brutalist-box inline-block">
+						<span class="japanese-text">創造</span> CREATIVE WORK
+					</div>
+				</div>
+
+				<!-- Description -->
+				<div class="max-w-2xl">
+					<div class="border-retro-blue border-l-2 pl-6">
+						<p class="text-muted-foreground leading-relaxed font-light">
+							Selected work showcasing expertise in <span class="japanese-text">機械学習</span> (machine
+							learning), full-stack development, and innovative solutions across various domains.
+						</p>
+					</div>
+				</div>
+			</div>
+
+			<!-- Projects Grid -->
+			<div class="space-y-20">
+				{#each projects as project, id}
+					<div class="no-animation grid grid-cols-12 gap-8 lg:gap-16">
+						<!-- Project Number & Info -->
+						<div class="col-span-12 lg:col-span-4">
+							<div class="space-y-6">
+								<!-- Project Number with Japanese styling -->
+								<div class="flex items-center space-x-4">
+									<div class="text-retro-blue text-6xl font-black">
+										{String(id + 1).padStart(2, '0')}
+									</div>
+									<div class="bg-retro-blue h-px flex-1"></div>
+								</div>
+
+								<!-- Project Meta -->
+								<div class="space-y-4">
+									<div>
+										<h3 class="mb-3 text-2xl font-bold tracking-wide uppercase">{project.title}</h3>
+										{#if project.featured}
+											<div class="brutalist-box inline-block">
+												<span class="japanese-text">特集</span> FEATURED
+											</div>
+										{:else}
+											<div
+												class="border-retro-red bg-background border px-3 py-1 font-mono text-xs tracking-wider uppercase"
+											>
+												<span class="japanese-text">作品</span> PROJECT
+											</div>
+										{/if}
+									</div>
+
+									<div class="border-retro-yellow border-l-2 pl-4">
+										<p class="text-muted-foreground leading-relaxed font-light">
+											{project.description}
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Project Details -->
+						<div class="col-span-12 lg:col-span-8">
+							<div class="space-y-8">
+								<!-- Project Visual with Japanese aesthetic -->
+								<div class="border-foreground relative aspect-video overflow-hidden border-2">
+									<div
+										class="from-retro-blue/10 to-retro-red/20 absolute inset-0 bg-gradient-to-br"
+									></div>
+									<div class="absolute inset-0 flex items-center justify-center">
+										<div class="space-y-2 text-center">
+											<div class="japanese-text text-4xl font-black">
+												{project.title.charAt(0)}
+											</div>
+											<div
+												class="text-muted-foreground/50 font-mono text-xs tracking-wider uppercase"
+											>
+												{project.title.split(' ')[0]}
+											</div>
+										</div>
+									</div>
+									<!-- Grid overlay on project visual -->
+									<div class="pointer-events-none absolute inset-0 opacity-10">
+										<div class="grid h-full grid-cols-8 gap-2">
+											{#each Array(8) as _, i}
+												<div class="border-retro-blue border-r"></div>
+											{/each}
+										</div>
+									</div>
+								</div>
+
+								<!-- Technologies & Links with Japanese styling -->
+								<div class="grid grid-cols-1 gap-8 lg:grid-cols-2">
+									<!-- Technologies -->
+									<div class="space-y-4">
+										<h4
+											class="border-retro-red border-l-2 pl-4 font-mono text-xs tracking-wider uppercase"
+										>
+											<span class="japanese-text">技術</span> TECHNOLOGIES
+										</h4>
+										<div class="space-y-2">
+											{#each project.technologies as tech}
+												<div class="flex items-center space-x-3">
+													<div class="bg-retro-blue h-1 w-1"></div>
+													<span class="text-sm font-medium">{tech}</span>
+												</div>
+											{/each}
+										</div>
+									</div>
+
+									<!-- Links -->
+									<div class="space-y-4">
+										<h4
+											class="border-retro-yellow border-l-2 pl-4 font-mono text-xs tracking-wider uppercase"
+										>
+											<span class="japanese-text">リンク</span> LINKS
+										</h4>
+										<div class="space-y-3">
+											{#if project.github}
+												<a
+													href={project.github}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="hover:text-retro-blue group flex items-center font-mono text-sm tracking-wide uppercase transition-colors"
+												>
+													<div
+														class="bg-retro-blue mr-3 h-px w-2 transition-all group-hover:w-4"
+													></div>
+													<span>GitHub</span>
+												</a>
+											{/if}
+											{#if project.live}
+												<a
+													href={project.live}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="hover:text-retro-red group flex items-center font-mono text-sm tracking-wide uppercase transition-colors"
+												>
+													<div
+														class="bg-retro-red mr-3 h-px w-2 transition-all group-hover:w-4"
+													></div>
+													<span>Live Demo</span>
+												</a>
+											{/if}
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				{/each}
+			</div>
+
+			<!-- Checkout my Projects Button -->
+			<div class="mt-16 flex justify-center">
+				<a
+					target="_blank"
+					href="https://github.com/debarshee2004"
+					class="brutalist-box text-center no-underline"
+				>
+					<span class="japanese-text">もっと</span> MORE PROJECTS
+				</a>
+			</div>
 		</div>
 	</div>
 </section>

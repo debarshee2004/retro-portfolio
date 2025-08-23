@@ -1,44 +1,33 @@
 <script lang="ts">
 	import volunteerData from '../data/volunteer.json';
-	import { onMount } from 'svelte';
 
 	let volunteer: any[] = volunteerData;
-	let mounted = false;
-
-	onMount(() => {
-		mounted = true;
-	});
 </script>
 
-<section id="volunteering" class="relative">
+<section id="volunteering" class="no-animation relative">
 	<!-- Section Number -->
-	<div
-		class={`absolute -top-2.5 -left-34 ${mounted ? 'opacity-100' : 'opacity-0'}`}
-		style="animation-delay: 1.2s;"
-	>
-		<div class="text-muted-foreground/20 text-8xl font-black select-none">04</div>
+	<div class="mb-12 flex items-center space-x-6">
+		<div class="text-muted-foreground font-mono text-xs tracking-[0.3em] uppercase">005</div>
+		<div class="bg-retro-blue h-px flex-1"></div>
+		<div class="japanese-text">奉仕</div>
 	</div>
 
 	<div class="space-y-12">
 		<!-- Header -->
-		<div class={`${mounted ? 'opacity-100' : 'opacity-0'}`} style="animation-delay: 1.3s;">
-			<div class="mb-12 flex items-center space-x-8">
-				<h2 class="text-4xl font-black tracking-wider uppercase">Volunteer</h2>
-				<div class="bg-foreground h-px flex-1"></div>
-			</div>
+		<div>
+			<h2 class="mb-8 text-5xl font-black tracking-[-0.02em] uppercase lg:text-6xl">
+				<span class="retro-blue">VOLUNTEER</span>
+			</h2>
 		</div>
 
 		<!-- Volunteer Timeline -->
-		<div class="space-y-16">
-			{#each volunteer as vol, id}
-				<div
-					class={`grid grid-cols-12 gap-8 ${mounted ? 'opacity-100' : 'opacity-0'}`}
-					style="animation-delay: {1.4 + id * 0.1}s;"
-				>
-					<!-- Timeline -->
+		<div class="space-y-12">
+			{#each volunteer as vol}
+				<div class="grid grid-cols-12 gap-8">
+					<!-- Timeline Info -->
 					<div class="col-span-12 lg:col-span-3">
 						<div class="space-y-2">
-							<div class="text-muted-foreground text-xs font-medium tracking-wider uppercase">
+							<div class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
 								{vol.duration}
 							</div>
 							{#if vol.location}
@@ -49,7 +38,7 @@
 									<div
 										class={`h-2 w-2 rounded-full ${vol.status === 'ongoing' ? 'bg-green-500' : 'bg-muted-foreground'}`}
 									></div>
-									<span class="text-muted-foreground text-xs tracking-wider uppercase">
+									<span class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
 										{vol.status}
 									</span>
 								</div>
@@ -59,38 +48,35 @@
 
 					<!-- Content -->
 					<div class="col-span-12 lg:col-span-9">
-						<div class="border-foreground space-y-4 border-l-4 pl-8">
-							<div>
-								<h3 class="mb-1 text-2xl font-bold">{vol.organization}</h3>
-								<div class="text-muted-foreground text-lg font-light">{vol.title}</div>
+						<div class="border-retro-blue space-y-4 border-l-2 pl-6">
+							<div class="space-y-2">
+								<h3 class="text-xl font-semibold">{vol.organization}</h3>
+								<h4 class="retro-blue font-medium">{vol.title}</h4>
 							</div>
 
 							{#if vol.description}
-								<p class="text-muted-foreground leading-relaxed font-light">
-									{vol.description}
-								</p>
+								<p class="text-muted-foreground leading-relaxed">{vol.description}</p>
 							{/if}
 
 							{#if vol.impact}
 								<div class="space-y-2">
-									<div class="text-muted-foreground text-xs font-medium tracking-wider uppercase">
+									<div class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
 										Impact
 									</div>
-									<p class="text-muted-foreground text-sm leading-relaxed font-light">
+									<p class="text-muted-foreground text-sm leading-relaxed">
 										{vol.impact}
 									</p>
 								</div>
 							{/if}
 
-							<!-- Skills/Technologies -->
 							{#if vol.skills && vol.skills.length > 0}
 								<div class="space-y-2">
-									<div class="text-muted-foreground text-xs font-medium tracking-wider uppercase">
+									<div class="text-muted-foreground font-mono text-xs tracking-wider uppercase">
 										Skills Used
 									</div>
 									<div class="flex flex-wrap gap-2">
 										{#each vol.skills as skill}
-											<span class="bg-muted py-1 text-xs font-medium tracking-wider uppercase">
+											<span class="border-foreground border px-2 py-1 font-mono text-xs uppercase">
 												{skill}
 											</span>
 										{/each}
