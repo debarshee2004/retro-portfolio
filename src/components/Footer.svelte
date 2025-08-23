@@ -18,83 +18,35 @@
 			<div class="space-y-8">
 				<!-- Title with Japanese -->
 				<div class="space-y-4">
-					<h2 class="text-4xl font-black tracking-[-0.02em] uppercase md:text-5xl">
-						<span class="japanese-text">終わり</span> FOOTER
+					<h2 class="brutal-title">
+						<span class="japanese-kanji">終了</span> FOOTER
 					</h2>
-					<div class="brutalist-box inline-block">
-						<span class="japanese-text">また会いましょう</span> SEE YOU AGAIN
+					<div class="brutalist-box japanese-float">
+						<span class="japanese-kanji">さようなら</span> SAYONARA
 					</div>
 				</div>
 			</div>
 
 			<!-- Footer Content -->
-			<div class="grid grid-cols-1 gap-12 lg:grid-cols-2">
+			<div class="brutal-grid grid-cols-1 gap-12 lg:grid-cols-2">
 				<!-- Main Message -->
-				<div class="brutalist-box">
-					<h3 class="mb-4 text-xl font-bold tracking-wide uppercase">
-						Let's Build Something Amazing Together
-					</h3>
-					<p class="text-muted-foreground leading-relaxed">
+				<div class="brutal-section">
+					<h3 class="brutal-subtitle mb-4">Let's Build Something Amazing Together</h3>
+					<p class="text-base leading-relaxed font-medium">
 						I'm always interested in new opportunities and exciting projects. Let's connect and
-						create something extraordinary.
+						create something <span class="japanese-kanji">素晴らしい</span>.
 					</p>
 				</div>
+			</div>
 
-				<!-- Links & Info -->
-				<div class="grid grid-cols-1 gap-8 md:grid-cols-2">
-					<!-- Quick Links -->
-					<div>
-						<h4 class="text-retro-blue mb-4 text-sm font-bold tracking-wide uppercase">
-							Quick Links
-						</h4>
-						<div class="space-y-2">
-							<a
-								target="_blank"
-								href="https://github.com/debarshee2004"
-								class="hover:text-retro-blue block text-sm transition-colors"
-							>
-								→ Projects
-							</a>
-							<a
-								data-sveltekit-preload-data="hover"
-								href="/blogs"
-								class="hover:text-retro-blue block text-sm transition-colors"
-							>
-								→ Blogs
-							</a>
-							<a
-								data-sveltekit-preload-data="hover"
-								href="/links"
-								class="hover:text-retro-blue block text-sm transition-colors"
-							>
-								→ Links
-							</a>
-						</div>
+			<!-- Bottom Section -->
+			<div class="japanese-border mt-12 p-6">
+				<div class="flex flex-col space-y-4 md:flex-row md:justify-between md:space-y-0">
+					<div class="brutal-subtitle text-sm">
+						© {currentYear} Debarshee Chakraborty. All rights reserved.
 					</div>
-
-					<!-- Tech Stack -->
-					<div>
-						<h4 class="text-retro-blue mb-4 text-sm font-bold tracking-wide uppercase">
-							Built With
-						</h4>
-						<div class="text-muted-foreground space-y-1 text-sm">
-							<div>SvelteKit</div>
-							<div>Tailwind CSS</div>
-							<div>TypeScript</div>
-							<div>Cloudflare</div>
-						</div>
-					</div>
-				</div>
-
-				<!-- Bottom Section -->
-				<div class="border-foreground/20 border-t pt-8">
-					<div class="flex flex-col space-y-4 md:flex-row md:justify-between md:space-y-0">
-						<div class="text-muted-foreground text-sm">
-							© {currentYear} Debarshee Chakraborty. All rights reserved.
-						</div>
-						<div class="text-muted-foreground text-sm">
-							Designed with Swiss typography principles
-						</div>
+					<div class="brutal-subtitle text-sm">
+						<span class="japanese-kanji">作成者</span> CRAFTED WITH LOVE
 					</div>
 				</div>
 			</div>

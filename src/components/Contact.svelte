@@ -23,21 +23,21 @@
 
 				<!-- Title with Japanese -->
 				<div class="space-y-4">
-					<h2 class="text-6xl font-black tracking-[-0.02em] uppercase md:text-7xl">
-						<span class="japanese-text">連絡</span><br />
+					<h2 class="brutal-title">
+						<span class="japanese-kanji">連絡先</span><br />
 						CONTACT
 					</h2>
-					<div class="brutalist-box inline-block">
-						<span class="japanese-text">お話しましょう</span> LET'S TALK
+					<div class="brutalist-box japanese-float">
+						<span class="japanese-kanji">話しましょう</span> LET'S TALK
 					</div>
 				</div>
 
 				<!-- Description -->
 				<div class="max-w-2xl">
-					<div class="border-retro-blue border-l-2 pl-6">
-						<p class="text-muted-foreground leading-relaxed font-light">
+					<div class="brutalist-card">
+						<p class="leading-relaxed font-medium">
 							Ready to collaborate? Let's discuss how we can work together to build something
-							amazing.
+							<span class="japanese-kanji">素晴らしい</span>.
 						</p>
 					</div>
 				</div>
