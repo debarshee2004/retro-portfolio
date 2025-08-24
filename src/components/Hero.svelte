@@ -123,7 +123,10 @@
 					<a href="#contact" class="brutalist-button text-center">
 						<span class="japanese-kanji">連絡</span> CONTACT
 					</a>
-					<a href="#experience" class="brutalist-button japanese-blue-bg text-center text-white">
+					<a
+						href="https://www.github.com/debarshee2004"
+						class="brutalist-button japanese-blue-bg text-center text-white"
+					>
 						View Work
 					</a>
 				</div>

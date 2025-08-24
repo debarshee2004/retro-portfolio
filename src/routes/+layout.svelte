@@ -23,7 +23,7 @@
 		class="bg-background text-foreground relative mx-auto min-h-screen max-w-6xl px-4 py-8 font-sans antialiased sm:px-6 sm:py-12 md:px-8 md:py-16 lg:px-16"
 	>
 		<!-- Corner decorative elements - Mobile responsive -->
-		<div class="fixed top-2 left-2 z-50 hidden sm:top-4 sm:left-4 sm:block">
+		<!-- <div class="fixed top-2 left-2 z-50 hidden sm:top-4 sm:left-4 sm:block">
 			<div class="brutalist-box text-xs">
 				<span class="japanese-kanji">建</span>
 			</div>
@@ -33,7 +33,7 @@
 			<div class="brutalist-box text-xs">
 				<span class="japanese-kanji">築</span>
 			</div>
-		</div>
+		</div> -->
 
 		{@render children()}
 	</div>

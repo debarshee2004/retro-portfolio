@@ -32,7 +32,7 @@
 				<div class="space-y-4">
 					<h2 class="brutal-title">
 						<span class="japanese-kanji">私について</span><br />
-						ABOUT
+						ABOUT ME
 					</h2>
 					<div class="brutalist-box japanese-float">
 						<span class="japanese-kanji">人間</span> HUMAN
@@ -81,7 +81,11 @@
 
 					<!-- Call to Action -->
 					<div class="flex space-x-4">
-						<a data-sveltekit-preload-data="hover" href="/blogs" class="brutalist-button">
+						<a
+							data-sveltekit-preload-data="hover"
+							href="https://www.dinocodes.in/blogs"
+							class="brutalist-button"
+						>
 							<span class="japanese-kanji">記事</span> READ BLOGS
 						</a>
 						<a href="#experience" class="brutalist-button japanese-blue-bg text-white">
