@@ -65,7 +65,7 @@
 						</div>
 
 						<!-- Skills Grid -->
-						<div class="brutal-grid">
+						<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
 							{#each category.skills as skill}
 								<div class="brutalist-card">
 									<div class="space-y-3">

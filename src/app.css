@@ -315,6 +315,42 @@ a:focus {
 
 /* Enhanced Japanese-Brutalist Design System */
 
+/* Mobile-first responsive typography */
+.brutal-title {
+	font-size: clamp(1.5rem, 8vw, 6rem);
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: -0.02em;
+	line-height: 0.9;
+	text-shadow: 2px 2px 0px hsl(var(--japanese-black));
+	color: hsl(var(--japanese-blue));
+}
+
+@media (min-width: 768px) {
+	.brutal-title {
+		text-shadow: 4px 4px 0px hsl(var(--japanese-black));
+	}
+}
+
+.brutal-subtitle {
+	font-size: clamp(0.75rem, 3vw, 1.5rem);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: hsl(var(--japanese-black));
+	background: hsl(var(--japanese-gold));
+	padding: 0.25rem 0.75rem;
+	display: inline-block;
+	transform: rotate(-0.5deg);
+}
+
+@media (min-width: 768px) {
+	.brutal-subtitle {
+		padding: 0.5rem 1rem;
+		transform: rotate(-1deg);
+	}
+}
+
 /* Japanese Typography Classes */
 .japanese-heading {
 	font-weight: 900;
@@ -342,19 +378,29 @@ a:focus {
 	font-size: 1.2em;
 }
 
-/* Brutalist Components */
+/* Brutalist Components - Mobile responsive */
 .brutalist-box {
 	background: hsl(var(--japanese-white));
 	color: hsl(var(--japanese-black));
-	padding: 1rem 2rem;
+	padding: 0.5rem 1rem;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.1em;
-	border: 4px solid hsl(var(--japanese-blue));
-	box-shadow: var(--brutal-shadow);
+	border: 3px solid hsl(var(--japanese-blue));
+	box-shadow: 2px 2px 0px hsl(var(--japanese-black));
 	transform: rotate(-1deg);
 	transition: all 0.1s ease;
 	display: inline-block;
+	font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+	.brutalist-box {
+		padding: 1rem 2rem;
+		border: 4px solid hsl(var(--japanese-blue));
+		box-shadow: var(--brutal-shadow);
+		font-size: 1rem;
+	}
 }
 
 .brutalist-box:hover {
@@ -364,11 +410,20 @@ a:focus {
 
 .brutalist-card {
 	background: hsl(var(--card));
-	border: 3px solid hsl(var(--japanese-blue));
-	box-shadow: var(--brutal-shadow);
-	padding: 2rem;
-	transform: rotate(0.5deg);
+	border: 2px solid hsl(var(--japanese-blue));
+	box-shadow: 2px 2px 0px hsl(var(--japanese-black));
+	padding: 1rem;
+	transform: rotate(0.25deg);
 	transition: all 0.2s ease;
+}
+
+@media (min-width: 768px) {
+	.brutalist-card {
+		border: 3px solid hsl(var(--japanese-blue));
+		box-shadow: var(--brutal-shadow);
+		padding: 2rem;
+		transform: rotate(0.5deg);
+	}
 }
 
 .brutalist-card:hover {
@@ -379,22 +434,39 @@ a:focus {
 .brutalist-button {
 	background: hsl(var(--japanese-blue));
 	color: hsl(var(--japanese-white));
-	border: 3px solid hsl(var(--japanese-black));
-	padding: 1rem 2rem;
+	border: 2px solid hsl(var(--japanese-black));
+	padding: 0.5rem 1rem;
 	font-weight: 900;
 	text-transform: uppercase;
 	letter-spacing: 0.05em;
-	box-shadow: var(--brutal-shadow-small);
+	box-shadow: 2px 2px 0px hsl(var(--japanese-black));
 	cursor: pointer;
 	transition: all 0.1s ease;
 	text-decoration: none;
 	display: inline-block;
+	font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+	.brutalist-button {
+		border: 3px solid hsl(var(--japanese-black));
+		padding: 1rem 2rem;
+		box-shadow: var(--brutal-shadow-small);
+		font-size: 1rem;
+	}
 }
 
 .brutalist-button:hover {
 	background: hsl(var(--japanese-crimson));
-	transform: translate(2px, 2px);
-	box-shadow: 2px 2px 0px hsl(var(--japanese-black));
+	transform: translate(1px, 1px);
+	box-shadow: 1px 1px 0px hsl(var(--japanese-black));
+}
+
+@media (min-width: 768px) {
+	.brutalist-button:hover {
+		transform: translate(2px, 2px);
+		box-shadow: 2px 2px 0px hsl(var(--japanese-black));
+	}
 }
 
 .brutalist-grid {

@@ -19,11 +19,11 @@
 	</div>
 
 	<!-- Main Content Container -->
-	<div class="relative z-10 mx-auto w-full max-w-[1600px] px-8 lg:px-16">
+	<div class="relative z-10 mx-auto w-full max-w-[1600px] px-4 sm:px-6 md:px-8 lg:px-16">
 		<!-- Swiss Grid Layout -->
-		<div class="grid grid-cols-12 gap-8 lg:gap-12">
+		<div class="grid grid-cols-12 gap-4 sm:gap-6 md:gap-8 lg:gap-12">
 			<!-- Left Column: Typography -->
-			<div class="no-animation col-span-12 space-y-12 lg:col-span-8">
+			<div class="no-animation col-span-12 space-y-6 sm:space-y-8 md:space-y-12 lg:col-span-8">
 				<!-- Section Number -->
 				<div class="flex items-center space-x-6">
 					<div class="text-muted-foreground font-mono text-xs tracking-[0.3em] uppercase">001</div>
@@ -58,7 +58,9 @@
 			</div>
 
 			<!-- Right Column: Info -->
-			<div class="no-animation col-span-12 space-y-8 lg:col-span-4">
+			<div
+				class="no-animation col-span-12 mt-8 space-y-4 sm:space-y-6 md:space-y-8 lg:col-span-4 lg:mt-0"
+			>
 				<!-- Status -->
 				<div class="brutalist-card">
 					<div class="space-y-3">
@@ -110,18 +112,20 @@
 		</div>
 
 		<!-- Bottom CTA -->
-		<div class="japanese-border mt-16 p-8">
+		<div class="japanese-border mt-8 p-4 sm:mt-12 sm:p-6 md:mt-16 md:p-8">
 			<div
 				class="flex flex-col items-start justify-between space-y-4 sm:flex-row sm:items-center sm:space-y-0"
 			>
-				<p class="brutal-subtitle">
+				<p class="brutal-subtitle text-center sm:text-left">
 					Ready to build something <span class="japanese-kanji">素晴らしい</span>?
 				</p>
-				<div class="flex space-x-4">
-					<a href="#contact" class="brutalist-button">
+				<div class="flex w-full flex-col space-y-2 sm:w-auto sm:flex-row sm:space-y-0 sm:space-x-4">
+					<a href="#contact" class="brutalist-button text-center">
 						<span class="japanese-kanji">連絡</span> CONTACT
 					</a>
-					<a href="#experience" class="brutalist-button japanese-blue-bg text-white"> View Work </a>
+					<a href="#experience" class="brutalist-button japanese-blue-bg text-center text-white">
+						View Work
+					</a>
 				</div>
 			</div>
 		</div>
